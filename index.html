@@ -59,6 +59,36 @@ a {
 a:hover {
   text-decoration: underline;
 }
+    .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.project {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.project img {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.project-text h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.project-text p {
+  margin: 0;
+  color: #475569;
+  max-width: 520px;
+}
   </style>
 </head>
 
@@ -85,24 +115,48 @@ a:hover {
       </p>
     </div>
 
-    <!-- PROJECTS -->
-    <div class="card">
-      <h2>Projects</h2>
-      <ul class="projects">
-        <li>
-          <strong>FocusApp</strong> – React + Django application for event discovery and recommendations.
-        </li>
-        <li>
-          <strong>RetroPad</strong> – Lightweight Win32 text editor in C++ focused on performance and large files.
-        </li>
-        <li>
-          <strong>CredentialScanner</strong> – Offline .NET tool for scanning credential leaks using hashing techniques.
-        </li>
-        <li>
-          <strong>RAG Pipeline (LLM)</strong> – Python-based document QA system using vector search and multimodal models.
-        </li>
-      </ul>
+  <!-- PROJECTS -->
+<div class="card">
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+    <div class="project">
+      <img src="images/focusapp.png" alt="FocusApp screenshot">
+      <div class="project-text">
+        <h3>FocusApp</h3>
+        <p>
+          Event discovery platform built with React and Django,
+          featuring recommendations and real-time filtering.
+        </p>
+      </div>
     </div>
+
+    <div class="project">
+      <img src="images/retropad.png" alt="RetroPad screenshot">
+      <div class="project-text">
+        <h3>RetroPad</h3>
+        <p>
+          Lightweight Win32 text editor written in C++,
+          optimized for very large files (&gt;300MB).
+        </p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="images/credentialscanner.png" alt="CredentialScanner screenshot">
+      <div class="project-text">
+        <h3>CredentialScanner</h3>
+        <p>
+          Offline .NET tool for scanning credential leaks
+          using hashing and efficient data structures.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
     <!-- SKILLS -->
     <div class="card">
