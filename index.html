@@ -1,61 +1,145 @@
-<!-- GitHub Pages rebuild -->
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dima Ignatiev</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dima Ignatiev | Software Developer|Data Analyst</title>
 
   <style>
-    /* VERY OBVIOUS YELLOW BACKGROUND */
-   body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
-  background: #f1f5f9;   /* blue-grey */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-    .box {
-      background: white;
-      padding: 32px;
-      max-width: 520px;
-      width: 90%;
-      border-radius: 12px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
-      text-align: center;
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9; /* blue-grey */
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
     }
 
-    h1 {
+    .container {
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .card {
+      background: white;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      margin-bottom: 24px;
+    }
+
+    h1, h2 {
       margin-top: 0;
     }
 
-    a {
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 22px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 6px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #334155;
+    }
+
+    .projects li {
+      margin-bottom: 12px;
+    }
+
+    .skills span {
       display: inline-block;
-      margin-top: 24px;
-      padding: 14px 22px;
-      background: #25D366;
-      color: white;
+      background: #e2e8f0;
+      padding: 6px 12px;
+      border-radius: 999px;
+      margin: 4px;
+      font-size: 14px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 16px;
       text-decoration: none;
-      border-radius: 8px;
+      color: #2563eb;
       font-weight: bold;
-      font-size: 16px;
     }
   </style>
 </head>
 
 <body>
-  <div class="box">
-   <title>Dima Ignatiev – test</title>
-    <h1>Software Developer</h1>
-    <h2>ברוכים הבאים</h2>
-    <p>בדיקת פריסה – הרקע חייב להיות צהוב</p>
+  <div class="container">
 
-    <a href="https://wa.me/972527274124">
-      דברו איתי בוואטסאפ
-    </a>
+    <!-- HERO -->
+    <div class="card">
+      <h1>Dima Ignatiev</h1>
+      <p><strong>Software Developer</strong></p>
+      <p>
+        Computer Science student with hands-on experience in
+        full-stack development, data processing, and algorithmic problem solving.
+      </p>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I build practical software projects from scratch and enjoy working close
+        to the system level as well as on user-facing applications.
+        My interests include data engineering, cybersecurity, and backend systems.
+      </p>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="card">
+      <h2>Projects</h2>
+      <ul class="projects">
+        <li>
+          <strong>FocusApp</strong> – React + Django application for event discovery and recommendations.
+        </li>
+        <li>
+          <strong>RetroPad</strong> – Lightweight Win32 text editor in C++ focused on performance and large files.
+        </li>
+        <li>
+          <strong>CredentialScanner</strong> – Offline .NET tool for scanning credential leaks using hashing techniques.
+        </li>
+        <li>
+          <strong>RAG Pipeline (LLM)</strong> – Python-based document QA system using vector search and multimodal models.
+        </li>
+      </ul>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="card">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Python</span>
+        <span>C / C++</span>
+        <span>C#</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Django</span>
+        <span>SQL</span>
+        <span>Racket / Scheme</span>
+        <span>Git</span>
+        <span>Linux</span>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="card">
+      <h2>Contact</h2>
+      <div class="links">
+        <a href="https://github.com/Dmitry-Ignatiev" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="mailto:your@email.com">Email</a>
+      </div>
+    </div>
+
   </div>
 </body>
 </html>
