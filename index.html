@@ -3,73 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dima Ignatiev | Software Developer|Data Analyst</title>
+  <title>Dima Ignatiev | Software Developer | Data Analyst</title>
 
   <style>
-  body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-  background: #f1f5f9;
-  color: #0f172a;
-}
+    /* Base styles */
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: #f1f5f9;
+      color: #0f172a;
+      line-height: 1.6;
+    }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 80px 20px 120px;
-}
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover { text-decoration: underline; }
 
-section {
-  margin-bottom: 120px;
-}
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
 
-h1 {
-  font-size: 44px;
-  margin-bottom: 8px;
-}
+    section { margin-bottom: 100px; }
 
-.subtitle {
-  font-size: 18px;
-  color: #475569;
-  margin-bottom: 32px;
-}
-.project-images {
-  display: flex;
-  gap: 12px;
-  margin-top: 16px;
-}
-.project-images img {
-  width: 70%;       /* scale the image to 50% of its container */
-  max-width: 400px; /* optional: limit max size */
-  height: auto;     /* keep aspect ratio */
-  display: block;   /* removes inline spacing */
-  margin: 0 auto;   /* center the image */
-}
-h2 {
-  font-size: 28px;
-  margin-bottom: 32px;
-}
+    h1 { font-size: 48px; margin-bottom: 12px; }
+    h2 { font-size: 32px; margin-bottom: 24px; text-align: center; }
+    h3 { font-size: 24px; margin-bottom: 8px; }
 
-h3 {
-  font-size: 22px;
-  margin-bottom: 8px;
-}
+    p { color: #334155; max-width: 700px; margin: 0 auto 16px; }
 
-p {
-  max-width: 640px;
-  line-height: 1.7;
-  color: #334155;
-}
+    /* Card style for sections */
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
 
-a {
-  color: #2563eb;
-  text-decoration: none;
-  font-weight: 600;
-}
+    /* Hero section */
+    .hero p { font-size: 18px; color: #475569; max-width: 700px; margin: 12px auto; text-align: center; }
 
-a:hover {
-  text-decoration: underline;
-}
+    /* Projects grid */
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    @media(min-width: 768px) {
+      .projects { grid-template-columns: 1fr 1fr; }
+    }
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .project-text { text-align: center; }
+    .project-text p { margin-bottom: 12px; }
+
+    .project-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .project-images img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    /* Skills */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+    .skills span {
+      background: #e2e8f0;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-weight: 500;
+      color: #0f172a;
+    }
+
+    /* Contact links */
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      font-size: 18px;
+    }
 
   </style>
 </head>
@@ -78,7 +112,7 @@ a:hover {
   <div class="container">
 
     <!-- HERO -->
-    <div class="card">
+    <div class="card hero">
       <h1>Dima Ignatiev</h1>
       <p><strong>Software Developer</strong></p>
       <p>B.Sc. graduate specializing in Data Science, with hands-on experience in full-stack development,
@@ -97,72 +131,55 @@ a:hover {
       </p>
     </div>
 
-  <!-- PROJECTS -->
-<div class="card">
-  <h2>Projects</h2>
+    <!-- PROJECTS -->
+    <div class="card">
+      <h2>Projects</h2>
+      <div class="projects">
 
-  <div class="projects">
+        <div class="project">
+          <div class="project-text">
+            <h3>FocusApp</h3>
+            <p>Tinder-like event discovery platform built with React and Django, featuring recommendations and real-time filtering.</p>
+            <div class="project-images">
+              <img src="images/focusapp1.jpg" alt="FocusApp screenshot 1">
+              <img src="images/focusapp2.jpg" alt="FocusApp screenshot 2">
+              <img src="images/focusapp4.jpg" alt="FocusApp screenshot 4">
+            </div>
+          </div>
+        </div>
 
-    <div class="project">
-      
+        <div class="project">
+          <div class="project-text">
+            <h3>RetroPad</h3>
+            <p>Lightweight Win32 text editor written in C++, optimized for very large files (&gt;300MB).</p>
+            <div class="project-images">
+              <img src="images/retropad1.jpg" alt="RetroPad screenshot">
+            </div>
+          </div>
+        </div>
 
-      
-<div class="project-text">
-  <h3>FocusApp</h3>
-  <p>
-    Tinder-like event discovery platform built with React and Django,
-    featuring recommendations and real-time filtering.
-  </p>
+        <div class="project">
+          <div class="project-text">
+            <h3>Final Intro to AI project</h3>
+            <p>Retrieval-Augmented Generation (RAG) pipeline using a pre-trained language model.</p>
+            <div class="project-images">
+              <img src="images/Patent Analysis screenshot.jpg" alt="Patent analysis screenshot">
+            </div>
+          </div>
+        </div>
 
-  <div class="project-images">
-    <img src="images/focusapp1.jpg" alt="FocusApp screenshot 1">
-    <img src="images/focusapp2.jpg" alt="FocusApp screenshot 2">
-    <img src="images/focusapp4.jpg" alt="FocusApp screenshot 4">
-  </div>
-</div>
-      
-<div class="project">
-  <div class="project-text">
-    <h3>RetroPad</h3>
-    <p>
-      Lightweight Win32 text editor written in C++,
-      optimized for very large files (&gt;300MB).
-    </p>
+        <div class="project">
+          <div class="project-text">
+            <h3>CredentialScanner</h3>
+            <p>.NET tool for scanning credential leaks using hashing and efficient data structures.</p>
+            <div class="project-images">
+              <img src="images/credentialscanner.png" alt="CredentialScanner screenshot">
+            </div>
+          </div>
+        </div>
 
-    <div class="project-images">
-      <img src="images/retropad1.jpg" alt="RetroPad screenshot">
-    </div>
-  </div>
-</div>
-
-
-<div class="project">
-  <div class="project-text">
-    <h3>Final Intro to AI project</h3>
-    <p>
-      Retrieval-Augmented Generation (RAG) pipeline using a pre-trained language model.
-    </p>
-
-    <div class="project-images">
-      <img src="images/Patent Analysis screenshot.jpg" alt="Patent analysis screenshot">
-    </div>
-  </div>
-</div>
-
-    <div class="project">
-      <img src="images/credentialscanner.png" alt="CredentialScanner screenshot">
-      <div class="project-text">
-        <h3>CredentialScanner</h3>
-        <p>
-          .NET tool for scanning credential leaks
-          using hashing and efficient data structures.
-        </p>
       </div>
     </div>
-
-  </div>
-</div>
-
 
     <!-- SKILLS -->
     <div class="card">
@@ -174,7 +191,7 @@ a:hover {
         <span>JavaScript</span>
         <span>React</span>
         <span>Django</span>
-        <span>SQL</spann>
+        <span>SQL</span>
         <span>Git</span>
         <span>Linux</span>
       </div>
