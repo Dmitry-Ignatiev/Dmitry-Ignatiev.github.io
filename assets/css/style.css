@@ -132,6 +132,7 @@ h1 {
   height: auto;
   display: block;
   object-fit: fill;
+  background: #0b1120;  /* ← dark background so light images show up */
 }
 
 .project-card div {
