@@ -37,7 +37,10 @@ a {
   padding: 80px 24px;
   text-align: center;
 }
-
+.profile-image {
+  display: block;
+  margin: 0 auto;
+}
 .eyebrow {
   color: var(--accent);
   font-weight: 700;
