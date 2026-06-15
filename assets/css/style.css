@@ -188,7 +188,13 @@ a {
   font-size: 16px;
   padding: 10px 14px;
 }
-
+.password-img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 12px auto;
+  border-radius: 8px;
+}
 /* ── Contact ── */
 .contact {
   padding-bottom: 120px;
