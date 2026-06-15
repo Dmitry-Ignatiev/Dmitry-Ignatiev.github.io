@@ -138,7 +138,7 @@ h1 {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: fill;
+  object-fit: contain;
   background: #0b1120;  /* ← dark background so light images show up */
 }
 
