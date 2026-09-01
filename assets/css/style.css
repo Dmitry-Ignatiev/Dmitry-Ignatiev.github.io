@@ -223,3 +223,13 @@ a {
     grid-template-columns: 1fr;
   }
 }
+/* Remove useless heading permalink / chain icons */
+.anchorjs-link,
+.anchor,
+.header-link,
+.heading-anchor,
+h1 > a[href^="#"],
+h2 > a[href^="#"],
+h3 > a[href^="#"] {
+  display: none !important;
+}
